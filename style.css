@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ol, ul {
+	list-style: none;
+}
+li.selected {
+    font-weight: bold;
+}
+h1{
+    font-size:26px;
+    padding:5px;
+    border: 1px dotted #eee;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+body {
+	font: 16px/20px 'Cabin Condensed', Arial, Tahoma, Verdana, sans-serif;
+	color: #ddd;
+	width: 100%;
+	background: url(asfalt.png) repeat; 
+}
+a {
+	color: #fff;
+	outline: none;
+	text-decoration: underline;
+}
+a.click{
+    font-size:20px;
+    color:#ee0000;
+}
+a:hover {
+	color: #999;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+img.border{
+    border: 8px solid white;
+    margin: 10px;
+    -webkit-box-shadow: 0 6px 9px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 6px 9px rgba(0,0,0,.25);
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+button {
+	font-size: 16px;
+	color: #000000;
+	font-weight:bold;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ebebeb 0%,
+		#757575);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ebebeb),
+		to(#757575));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #7d7d7d;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+}
+button.small {
+	font-size: 12px;
+	padding: 5px;
+}
+
+button:hover {
+    color: #990000;
+    background: -moz-linear-gradient(
+		top,
+		#757575 0%,
+		#ebebeb);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#757575),
+		to(#ebebeb));
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+    color: #eee;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 17px 0 0 10px;
+	height: 60px;
+	background: #333 url('header.png') top left repeat-x;
+}
+
+#header a{
+    text-decoration: none;
+}
+
+#headContainer{
+    width: 1000px;
+	margin: 0 auto;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	position: relative;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+#content {
+	padding: 5px 5px 5px 270px;
+}
+
+#app {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#loading{
+    z-index: 10;
+    position: absolute;
+    right: 200px;
+    top: 60px;
+}
+
+#movie{
+    min-height:400px;
+}
+
+
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+#sideLeft {
+	float: left;
+	width: 235px;
+	padding: 10px;
+	margin-left: -100%;
+	position: relative;
+}
+#roundBox{
+    width: 95%;
+    color:#222;
+    padding:10px;
+    background:#ccc url(dust.png) repeat;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 6px 9px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 6px 9px rgba(0,0,0,.25);
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+    position: relative;
+    height: 45px;
+	clear:both;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+	color: #ddd;
+	background: #000;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+/* Wheel
+-----------------------------------------------------------------------------*/
+img.border{
+    border: 8px solid white;
+    margin: 10px;
+    -webkit-box-shadow: 0 6px 9px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 6px 9px rgba(0,0,0,.25);
+}
+
+img.loading {
+    -webkit-animation: spin 4s infinite linear;
+    -moz-animation: spin 4s infinite linear;
+    -o-animation: spin 4s infinite linear;
+    -ms-animation: spin 4s infinite linear;
+}
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(720deg);}
+}
+@-moz-keyframes spin {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(720deg);}
+}
+@-o-keyframes spin {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(720deg);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(720deg);}
+}

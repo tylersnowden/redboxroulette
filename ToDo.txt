@@ -1,0 +1,8 @@
+
+Create a Website along with App for Android and Iphone
+
+Load default api. Then access same json for each spin
+While Accessing API display roulette animation.
+Make api get dynamic and include filter.
+Lose the DB and XML files
+
